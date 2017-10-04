@@ -1,0 +1,637 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Go Green</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+
+
+  <style>
+  body 
+  {
+  background: url("03.jpg") no-repeat center fixed; 
+  background-size: cover;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: black;   
+  }
+  .header{ color:black; text-align:center;}
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+   width: 80%;
+   margin: auto;
+  }
+
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color:#0099cc;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid { color:#80bfff;
+      padding: 60px 50px;
+  }
+  
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f4511e;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: darkgreen;
+  }
+  .carousel-indicators li {
+      border-color: darkgreen;
+  }
+  .carousel-indicators li.active {
+      background-color: darkgreen;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #80bfff; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #80bfff;
+      background-color: #fff !important;
+      color: #0099cc;
+  }
+  .panel-heading {
+      color: black !important;
+      background-color: #80bfff !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #80bfff;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: green;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #0099cc !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #0099cc;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Reusing Natural Things</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav><br><br>
+<div id="about" color="black" style="text-align:center"><h1>GREEN EDUCATION</h1></div>
+<div class="container">
+  <br><br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="02.jpg" alt="Chania" width="300" height="100">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="01.png" alt="Chania" width="300" height="100">
+        <div class="carousel-caption">
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="05.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+        
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="04.jpg" alt="Flower" width="300" height="100">
+        <div class="carousel-caption">
+   
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>REUSING NATURAL THINGS</h2>
+  <h4></h4>
+  <br>
+  <div class="row slideanim">
+   <div class="col-sm-6">
+       <a href="#collapse1" data-toggle="collapse"><img src="06.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236"></a>
+       <h4>Solid Type</h4>
+	
+     <div id="collapse1" class="collapse">
+	 <ul class="list-group">
+       
+					
+					<a data-toggle="modal" data-target="#myModal"><li class="list-group-item">Wood</li>
+                        </a>
+
+						<!-- Modal -->
+						<div id="myModal" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+
+							<!-- Modal content-->
+							<div class="modal-content">
+							  <div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Wood</h4>
+							  </div>
+							  <div class="modal-body">
+							  <img src="chair.png">
+								<p>	STEPS TO MAKE A CHAIR OUT OF WOODEN PALLETS:- <br>
+								•	Separate each pallet and sand them to clean.<br>
+								•	Now place four pallets parallel to each other with equal gaps between them.<br>
+								•	Place two more planks perpendicularly on the above 4 planks at the edges.<br>
+								•	Drill holes and place screws such that all 6 planks are intact together and form a surface.<br>
+								•	Repeat the steps to form five more such wooden surfaces.<br>
+								•	Mount them and then either glue or tightly screw them together to form a chair.<br>
+
+<br><br>
+							<img src="photoframe.png"><br>
+								STEPS TO MAKE A WOODEN PHOTO FRAME:-<br>
+								Now this is something you literally don’t need to do much.<br>
+								•	Take a wooden plank (separated from garbage) and cut out a section from middle according to the dimensions of the photo.
+								<br>•	Either decorate it, as you want or just leave it as it is to give a look of ruggedness.
+							<br>	•	Place the photo and cover it with a piece of glass of same shape and size.
+								<br>Your photo frame is ready!!!!!
+</p>
+							  </div>
+							  <div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							  </div>
+							</div>
+
+						  </div>
+						</div>
+								  
+		   
+		
+        <a data-toggle="modal" data-target="#myModal1"><li class="list-group-item">Cotton</li>
+                        </a>
+
+						<!-- Modal -->
+						<div id="myModal1" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+
+							<!-- Modal content-->
+							<div class="modal-content">
+							  <div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Cotton</h4>
+							  </div>
+							  <div class="modal-body">
+								<p>
+								How to Make A No Sew T-Shirt Tote Bag</br>
+Supplies:</br>
+•	 Old t-shirt – The thicker the fabric, the sturdier the bag</br>
+•	Sharp scissors, preferably fabric scissors</br>
+•	Washable marker (optional)<br>
+Directions:</br>
+Step 1: </br>Cut the sleeves off  </br><img src ="07.jpg" width=250 height =150></br>
+ 
+If you’d like to fold the t-shirt in half you can cut both sleeves at once so that they are identical. Or, if your material is too thick to cut them both at once, you can cut one, then fold it in half and use the cut side as a guide for the next sleeve.</br>
+Step 2:</br> Cut the neckline area </br> <img src="08.jpg" width=250 height=150></br>
+ 
+If you’d like, you can turn the shirt inside out and trace the outline of a bowl before cutting. I used both methods and personally, I like free-hand cutting better because I prefer a slightly oval shape to a perfectly round one. I ended up trimming this one a bit to make it more oval.</br>
+Step 3: </br>Cut fringe </br> <img src="09.jpg" width=250 height=150></br>
+ 
+Now grab your scissors and cut slits from the bottom of the shirt up to the line marking the bottom of your bag. You’ll want to cut both the front and back layers together because they need to match up for the next step.</br>
+Step 4: </br>Tie Fringe </br><img src="10.jpg" width=250 height=150></br>
+ 
+Okay, this is going to sound really complicated, but it’s NOT, promise. Take your first pair of fringe and tie it into a knot, then tie two more pairs. Now if you lift your bag you’ll see that although the pairs are pulling the bag together, there’s a hole between each pair. This next step will close those holes.  In the photo above you see three sets of fringe that have been tied in knots. What I do next is grab one strand from the middle set (the one with the arrow pointing left) and tie it in a knot with one of the strands on the left set. Then I take the other strand from the middle set (the one with the arrow pointing right) and tie it in a knot with one of the strands on the right set.</br>
+ <img src="11.jpg" width=250 height=150></br>
+Then I take the remaining strand on the right set and tie it to the next set of strands, and so on and so forth until all the strands are tied. Now turn your t-shirt right side out again and voila, you’re done!
+
+
+								
+								
+								
+								</p>
+							  </div>
+							  <div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							  </div>
+							</div>
+
+						  </div>
+						</div>
+	  <a data-toggle="modal" data-target="#myModal"><li class="list-group-item">Metals</li>
+                        </a>
+
+						<!-- Modal -->
+						<div id="myModal" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+
+							<!-- Modal content-->
+							<div class="modal-content">
+							  <div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Metals</h4>
+							  </div>
+							  <div class="modal-body">
+								<p>ig;jfkef;ojsfmdsf;sfjs;fjsf,</p>
+							  </div>
+							  <div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							  </div>
+							</div>
+
+						  </div>
+						</div>
+        
+		   <a data-toggle="modal" data-target="#myModal"><li class="list-group-item">Glass</li>
+                        </a>
+
+						<!-- Modal -->
+						<div id="myModale" class="modal fade" role="dialog">
+						  <div class="modal-dialog">
+
+							<!-- Modal content-->
+							<div class="modal-content">
+							  <div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Glass</h4>
+							  </div>
+							  <div class="modal-body">
+								<p>ig;jfkef;ojsfmdsf;sfjs;fjsf,</p>
+							  </div>
+							  <div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							  </div>
+							</div>
+
+						  </div>
+						</div>
+	   
+		   <a href="#raji" data-toggle="collapse">
+		<li class="list-group-item">Earthen Pots</li></a>
+        
+		  <a href="#raj" data-toggle="collapse">
+		<li class="list-group-item">Papers</li></a>
+       
+		  
+		
+				  
+	  </ul>
+	   </div>
+	</div>
+ 
+
+    <div class="col-sm-6">
+       <a href="#collapse2" data-toggle="collapse"><img src="organics.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236"></a>
+      <h4>Organic Type</h4>
+	   <div id="collapse2" class="collapse">
+	 <ul class="list-group">
+        <a href="#pmkv" data-toggle="collapse"><li class="list-group-item">Vegetable peels</li></a>
+        		<div id="pmkv" class="collapse">
+		banana peels 
+		</div>
+		
+		<a href="#pmkv2" data-toggle="collapse"><li class="list-group-item">Cotton</li>
+        </a>
+		<a href="#nrlm" data-toggle="collapse">
+		<li class="list-group-item">Dead animal bodies</li></a>
+        
+		   <a href="#sgsy" data-toggle="collapse">
+		<li class="list-group-item">Cow dungs</li></a>
+	   
+	  </ul>
+	   </div>
+     
+    </div>
+	</div>  
+	<div class="row slideanim">
+	<div class="col-sm-6">
+       <a href="#collapse3 " data-toggle="collapse"><img src="liquid.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236"></a>
+       <h4>Liquid type</h4>
+  <div id="collapse3" class="collapse">
+	 <ul class="list-group">
+	 
+        <a href="#pmsb" data-toggle="collapse"><li class="list-group-item">Used water</li></a>
+          <div id="pmsb" class="collapse">
+
+		</div>
+		
+		
+		   
+				  
+	  </ul>
+	   </div>   
+    </div>
+ 
+  
+  
+  
+  
+  
+  
+  
+    <div class="col-sm-6"  id="accordion">
+      <a href="#collapse4" data-toggle="collapse"><img src="solid.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236"></a>
+      <h4>Hazardous type</h4>
+     <div id="collapse4" class="collapse" >
+	 <ul class="list-group">
+        <a href="#sdfgg" data-toggle="collapse" data-parent="#accordion"><li class="list-group-item">Aluminium cans</li></a>
+          <div id="sdfgg" class="collapse">
+	 </div>
+		<a href="#pmkk" data-toggle="collapse" ><li class="list-group-item">Metal Wires</li>
+        </a><div id="pmkk" class="collapse">
+		 
+		   </div>
+		<a href="#aaaa" data-toggle="collapse" data-parent="#accordion">
+		<li class="list-group-item">Glass</li></a>
+        <div id="aaaa" class="collapse"
+
+
+		   </div>
+		   <a href="#sgsy" data-toggle="collapse" data-parent="#accordion">
+		<li class="list-group-item">Swarnajayanti Gram Swarozgar Yojana</li></a>
+	    <div id="sgsy" class="collapse">
+		
+Bring the assisted poor families above the poverty line by organizing them into Self Help Groups (SHGs) through the process of social mobilization, their training and capacity building and provision of income generating assets through a mix of bank credit and government subsidy.
+
+		
+		   </div>
+		<a href="#sg" data-toggle="collapse" data-parent="#accordion">
+		<li class="list-group-item">Sampoorna Grameen Rozgar Yojana
+
+</li></a>
+		<div id="sg" class="collapse" data-parent="#accordion">
+		
+Providing additional wage employment and food security, alongside creation of durable community assets in rural areas.
+
+		   </div>
+		<a href="#nulm" data-toggle="collapse">
+		<li class="list-group-item">National Urban Livelihood Mission (NULM)</li></a>
+		<div id="nulm" class="collapse">
+		
+		This scheme will reduce poverty of urban poor households specially street vendors who constitute an important segment of urban poor by enabling them to access gainful self-employment and skilled wage employment opportunities.
+		
+		
+		</div>
+		
+		
+		<a href="#mg" data-toggle="collapse" data-parent="#accordion">
+
+		<li class="list-group-item">Mahatma Gandhi National Rural Employment Guarantee Act</li></a>
+				<div id="mg" class="collapse">
+		Legal guarantee for one hundred days of employment in every financial year to adult members of any rural household willing to do public work-related unskilled manual work at the statutory minimum wage of Rs. 120 per day in 2009 prices.
+		
+				   </div>
+	  </ul>
+	   </div> 
+	   </div>
+	   </div>
+
+<br><br>
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">HELP DESK!</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p style="color:darkgreen" > If you have any suggestions or queries, feel free to contact us!</p>
+      
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
